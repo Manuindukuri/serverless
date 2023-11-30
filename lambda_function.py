@@ -43,7 +43,7 @@ def download_release(repo_url, download_path, user_email, user_id, assigmment_id
                     local_file.write(response.content)
 
                 upload_to_gcs('{}/{}/{}.zip'.format(user_id, assigmment_id, submission_id), os.getenv("GCS_BUCKET_NAME"))
-                email_status(user_email, "You file has been downloaded successfully for submission: {}".format(submission_id))
+                email_status(user_email, "You file has been downloaded successfully for submission: {} at {}".format(submission_id, '{}/{}/{}.zip'.format(user_id, assigmment_id, submission_id)))
                 
             else:
                 email_status(user_email, "Incorrect file format, Please upload the URL of zip")
