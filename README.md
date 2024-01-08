@@ -1,4 +1,4 @@
-# Lambda Function: GitHub Release Downloader
+# Lambda Function: Triggered by SNS in AWS
 
 This AWS Lambda function downloads a GitHub release archive from a specified repository URL and uploads it to Google Cloud Storage. It also sends email notifications using Mailgun and tracks the email status in AWS DynamoDB.
 
