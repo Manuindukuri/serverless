@@ -1,10 +1,19 @@
 # Lambda Function: Triggered by SNS in AWS
 
-This AWS Lambda function downloads a GitHub release archive from a specified repository URL and uploads it to Google Cloud Storage. It also sends email notifications using Mailgun and tracks the email status in AWS DynamoDB.
+[![Python](https://img.shields.io/badge/python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org) 
+[![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/console)
+[![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)](https://cloud.google.com)
+[![AWS Lambda](https://img.shields.io/badge/aws%20lambda-purple?style=for-the-badge&logo=aws%20lambda&logoColor=white)](https://aws.amazon.com/pm/lambda)
+[![AWS SNS](https://img.shields.io/badge/AWS%20SNS-3670A0.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/console)
+[![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com)
+
+Serverless computing is used for running applications that require backend services but don't need the complexity and overhead of a full server all the time. It's ideal for workloads that are intermittent or unpredictable, making it a cost-effective and flexible solution for many use cases. In serverless computing, we write code and deploy it to a serverless platform without worrying about the underlying infrastructure. The platform automatically scales the computational resources up or down based on the application's needs.
+
+![image](https://github.com/Manuindukuri/serverless/assets/114769115/07ef404f-cd48-4c0b-a546-f3fe287a004e)
 
 ## Overview
 
-The Lambda function is triggered by an event published to an Amazon SNS topic. The SNS message includes details such as the GitHub repository URL, user information, and assignment details.
+This AWS Lambda function downloads a GitHub release archive from a specified repository URL and uploads it to Google Cloud Storage. It also sends email notifications using Mailgun and tracks the email status in AWS DynamoDB. The SNS message includes details such as the GitHub repository URL, user information, and assignment details.
 
 ## Functionality
 
